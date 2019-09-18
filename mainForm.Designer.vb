@@ -25,8 +25,8 @@ Partial Class mainForm
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(mainForm))
         Me.oathLabel = New System.Windows.Forms.Label()
         Me.author = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.logo = New System.Windows.Forms.PictureBox()
+        CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'oathLabel
@@ -50,15 +50,15 @@ Partial Class mainForm
         Me.author.Text = "Author: Nguyen Hoang Gia Bao"
         Me.author.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'PictureBox1
+        'logo
         '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(13, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(144, 144)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox1.TabIndex = 2
-        Me.PictureBox1.TabStop = False
+        Me.logo.Image = CType(resources.GetObject("logo.Image"), System.Drawing.Image)
+        Me.logo.Location = New System.Drawing.Point(13, 0)
+        Me.logo.Name = "logo"
+        Me.logo.Size = New System.Drawing.Size(144, 144)
+        Me.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.logo.TabIndex = 2
+        Me.logo.TabStop = False
         '
         'mainForm
         '
@@ -66,7 +66,7 @@ Partial Class mainForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(732, 178)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.logo)
         Me.Controls.Add(Me.author)
         Me.Controls.Add(Me.oathLabel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -77,7 +77,7 @@ Partial Class mainForm
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Hydra Virus"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.logo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -85,5 +85,5 @@ Partial Class mainForm
 
     Friend WithEvents oathLabel As Label
     Friend WithEvents author As Label
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents logo As PictureBox
 End Class
