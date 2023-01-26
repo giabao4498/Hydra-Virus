@@ -33,9 +33,9 @@ Partial Class mainForm
         '
         Me.oathLabel.AutoSize = True
         Me.oathLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.oathLabel.Location = New System.Drawing.Point(213, 28)
+        Me.oathLabel.Location = New System.Drawing.Point(240, 35)
         Me.oathLabel.Name = "oathLabel"
-        Me.oathLabel.Size = New System.Drawing.Size(0, 26)
+        Me.oathLabel.Size = New System.Drawing.Size(0, 30)
         Me.oathLabel.TabIndex = 0
         Me.oathLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
@@ -43,9 +43,9 @@ Partial Class mainForm
         '
         Me.author.AutoSize = True
         Me.author.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.author.Location = New System.Drawing.Point(408, 124)
+        Me.author.Location = New System.Drawing.Point(459, 155)
         Me.author.Name = "author"
-        Me.author.Size = New System.Drawing.Size(244, 20)
+        Me.author.Size = New System.Drawing.Size(313, 25)
         Me.author.TabIndex = 1
         Me.author.Text = "Author: Nguyen Hoang Gia Bao"
         Me.author.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -53,7 +53,8 @@ Partial Class mainForm
         'logo
         '
         Me.logo.Image = CType(resources.GetObject("logo.Image"), System.Drawing.Image)
-        Me.logo.Location = New System.Drawing.Point(13, 0)
+        Me.logo.Location = New System.Drawing.Point(15, 0)
+        Me.logo.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.logo.Name = "logo"
         Me.logo.Size = New System.Drawing.Size(144, 144)
         Me.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -62,21 +63,23 @@ Partial Class mainForm
         '
         'mainForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(732, 178)
+        Me.ClientSize = New System.Drawing.Size(824, 222)
         Me.Controls.Add(Me.logo)
         Me.Controls.Add(Me.author)
         Me.Controls.Add(Me.oathLabel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "mainForm"
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Hydra Virus"
+        Me.TopMost = True
         CType(Me.logo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
